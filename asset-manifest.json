@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/petfinder-api/static/css/main.763d1133.css",
-    "main.js": "/petfinder-api/static/js/main.74d53da8.js",
+    "main.js": "/petfinder-api/static/js/main.e22a1c84.js",
+    "static/media/header.jpg": "/petfinder-api/static/media/header.090d0abe5aba852905a6.jpg",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/petfinder-api/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/petfinder-api/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/petfinder-api/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
@@ -29,12 +30,13 @@
     "static/media/open-sans-latin-300italic.woff2": "/petfinder-api/static/media/open-sans-latin-300italic.b45d9997b704ab3daad1.woff2",
     "static/media/open-sans-latin-600italic.woff2": "/petfinder-api/static/media/open-sans-latin-600italic.cc4bf5b2955147801c02.woff2",
     "static/media/open-sans-latin-400italic.woff2": "/petfinder-api/static/media/open-sans-latin-400italic.bb915319f59c02c348a6.woff2",
+    "static/media/p.png": "/petfinder-api/static/media/p.a88639bd4791590d78d9.png",
     "index.html": "/petfinder-api/index.html",
     "main.763d1133.css.map": "/petfinder-api/static/css/main.763d1133.css.map",
-    "main.74d53da8.js.map": "/petfinder-api/static/js/main.74d53da8.js.map"
+    "main.e22a1c84.js.map": "/petfinder-api/static/js/main.e22a1c84.js.map"
   },
   "entrypoints": [
     "static/css/main.763d1133.css",
-    "static/js/main.74d53da8.js"
+    "static/js/main.e22a1c84.js"
   ]
 }
