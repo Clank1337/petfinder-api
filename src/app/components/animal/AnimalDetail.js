@@ -17,7 +17,12 @@ const AnimalDetail = ({ animal }) => {
             <Row>
                 <Col className='m-3'>
                     <Card>
-                        <CardImg top src={photos[0]?.large || '../assets/img/p.png'} alt={name} style={{ maxHeight: '600px', objectFit: 'contain' }} />
+                        <CardImg
+                            top
+                            src={photos[0]?.large || `${process.env.PUBLIC_URL}/assets/img/p.png`}
+                            alt={name}
+                            style={{ maxHeight: '600px', objectFit: 'contain' }}
+                        />
                         <CardBody>
                             <CardTitle tag='h3'>{name}</CardTitle>
                             <CardText className='text-muted'>

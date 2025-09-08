@@ -10,6 +10,7 @@ import {
 } from "reactstrap";
 import { useDispatch } from "react-redux";
 import { fetchAnimals } from "../animal/animalsSlice";
+import headerImg from '../../assets/img/header.jpg';
 
 function LandingPageHeader() {
     const dispatch = useDispatch();
@@ -36,7 +37,7 @@ function LandingPageHeader() {
             <div className="page-header clear-filter" filter-color="blue">
                 <div
                     className="page-header-image"
-                    style={{ backgroundImage: "url('../assets/img/header.jpg')" }}
+                    style={{ backgroundImage: `url(${headerImg})` }}
                 />
                 <Container>
                     <div className="content-center brand">
