@@ -8,12 +8,14 @@ import {
     Row,
     Col,
 } from "reactstrap";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { fetchAnimals } from "../animal/animalsSlice";
 import headerImg from '../../assets/img/header.jpg';
 
 function LandingPageHeader() {
     const dispatch = useDispatch();
+    const [searchParams, setSearchParams] = useState({});
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -30,6 +32,7 @@ function LandingPageHeader() {
         console.log(params)
 
         dispatch(fetchAnimals(params));
+        setSearchParams(params);
     }
 
     return (

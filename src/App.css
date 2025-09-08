@@ -131,6 +131,11 @@
   max-width: 880px;
 }
 
+.results-section {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+}
+
 .page-header {
   min-height: 50vh;
   max-height: 999px;

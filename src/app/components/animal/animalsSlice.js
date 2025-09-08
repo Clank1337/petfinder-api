@@ -59,7 +59,13 @@ export async function fetchBreedsByType(type) {
 }
 
 
-const initialState = { animals: [], isLoading: false, errMsg: "" };
+const initialState = {
+    animals: [],
+    pagination: null,
+    searchParams: {},
+    isLoading: false,
+    errMsg: ""
+};
 
 const animalsSlice = createSlice({
     name: "animals",
@@ -74,6 +80,8 @@ const animalsSlice = createSlice({
             state.isLoading = false;
             state.errMsg = "";
             state.animals = action.payload?.animals ?? [];
+            state.pagination = action.payload?.pagination ?? null;
+            state.searchParams = action.meta.arg ?? {};
         },
         [fetchAnimals.rejected]: (state, action) => {
             state.isLoading = false;
