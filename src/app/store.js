@@ -1,8 +1,13 @@
+// store.js
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { animalsReducer } from './components/animal/animalsSlice';
 
 export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+  reducer: { animals: animalsReducer },
+  // If you customize middleware, start from getDefaultMiddleware()
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      thunk: true,            // ensure thunk stays enabled
+      serializableCheck: false,
+    }),
 });

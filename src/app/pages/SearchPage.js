@@ -1,7 +1,7 @@
 import { use } from 'react';
 import { useState } from 'react';
 import { searchPets } from '../petsService';
-import AnimalsList from '../components/AnimalsList';
+import AnimalsList from '../components/animal/AnimalsList';
 
 
 

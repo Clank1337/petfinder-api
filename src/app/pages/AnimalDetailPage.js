@@ -1,6 +1,6 @@
 import { useParams, useLocation } from "react-router-dom";
 import { Container } from "reactstrap";
-import AnimalDetail from "../components/AnimalDetail";
+import AnimalDetail from "../components/animal/AnimalDetail";
 
 const AnimalDetailPage = () => {
     const { id } = useParams();

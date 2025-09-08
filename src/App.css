@@ -1,28 +1,4 @@
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  text-align: center;
-  background: url('./app/assets/img/bg.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
 
-body::before {
-  content: "";
-  background: rgba(0, 0, 0, 0.4);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-h1 {
-  color: #fff;
-  text-shadow: 1px 1px 4px #000;
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
-}
 
 #results {
   display: flex;
@@ -68,57 +44,189 @@ h1 {
   font-size: 0.9rem;
 }
 
-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-bottom: 20px;
+.landing-page .header {
+  height: 100vh;
+  position: relative;
 }
 
-form input[type="text"],
-form input[type="number"],
-form select {
-  padding: 8px;
-  width: 200px;
-  box-sizing: border-box;
+.landing-page .header .container {
+  padding-top: 26vh;
+  color: #ffffff;
+  z-index: 2;
+  position: relative;
 }
 
-form button {
-  padding: 8px 20px;
-  cursor: pointer;
+.landing-page .header .share {
+  margin-top: 150px;
 }
 
-#searchForm {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 10px 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+.landing-page .header h1 {
+  font-weight: 600;
 }
 
-#searchForm input,
-#searchForm select {
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+.landing-page .header .title {
+  color: #ffffff;
 }
 
-#pagination button {
-  margin: 0 4px;
-  padding: 6px 12px;
-  border: none;
-  border-radius: 4px;
-  background-color: #eee;
-  cursor: pointer;
+.landing-page .section-team .team .team-player img {
+  max-width: 100px;
 }
 
-#pagination button.active-page {
-  background-color: #ff914d;
-  color: #fff;
-  font-weight: bold;
+.landing-page .section-team .team-player {
+  margin-bottom: 15px;
+}
+
+.landing-page .section-contact-us .title {
+  margin-bottom: 15px;
+}
+
+.landing-page .section-contact-us .description {
+  margin-bottom: 30px;
+}
+
+.landing-page .section-contact-us .input-group,
+.landing-page .section-contact-us .send-button,
+.landing-page .section-contact-us .textarea-container {
+  padding: 0 40px;
+}
+
+.landing-page .section-contact-us .textarea-container {
+  margin: 40px 0;
+}
+
+.landing-page .section-contact-us a.btn {
+  margin-top: 35px;
+}
+
+.page-header {
+  min-height: 100vh;
+  max-height: 999px;
+  padding: 0;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header .page-header-image {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.page-header .content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 880px;
+}
+
+.page-header {
+  min-height: 50vh;
+  max-height: 999px;
+  padding: 0;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header>.content {
+  margin-top: 12%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-header.page-header-small {
+  min-height: 60vh;
+  max-height: 440px;
+}
+
+.page-header:before {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header>.container {
+  z-index: 2;
+  padding-top: 12vh;
+  padding-bottom: 40px;
+}
+
+.page-header .page-header-image {
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.page-header:after,
+.page-header:before {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  left: 0;
+  top: 0;
+  content: "";
+}
+
+.clear-filter:after,
+.clear-filter:before {
+  display: none;
+}
+
+.clear-filter[filter-color="orange"] {
+  background: rgba(44, 44, 44, 0.2);
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(90deg,
+      rgba(44, 44, 44, 0.2),
+      rgba(224, 23, 3, 0.6));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(90deg,
+      rgba(44, 44, 44, 0.2),
+      rgba(224, 23, 3, 0.6));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(90deg,
+      rgba(44, 44, 44, 0.2),
+      rgba(224, 23, 3, 0.6));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(0deg,
+      rgba(44, 44, 44, 0.2),
+      rgba(224, 23, 3, 0.6));
+  /* Standard syntax */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h1,
+.h1 {
+  font-size: 3.5em;
+  line-height: 1.15;
+  margin-bottom: 30px;
+}
+
+h1 small,
+.h1 small {
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.8;
 }
